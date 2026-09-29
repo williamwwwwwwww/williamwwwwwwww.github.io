@@ -24,8 +24,9 @@
     setTheme(root.dataset.theme || "light");
     localStorage.setItem("portfolio-language", language);
   }
-  setTheme(savedTheme === "dark" ? "dark" : "light");
+  setTheme(savedTheme === "light" ? "light" : "dark");
   setLanguage(language);
   themeButton.addEventListener("click", () => setTheme(root.dataset.theme === "dark" ? "light" : "dark"));
   languageButton.addEventListener("click", () => setLanguage(language === "zh" ? "en" : "zh"));
 })();
+
